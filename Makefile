@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -g -I /usr/include/eigen3
+CXXFLAGS = -Wall -I /usr/include/flann/
 
 main: entropy.cpp
-	$(CXX) $(CXXFLAGS) entropy.cpp
+	$(CXX) entropy.cpp -o entropy $(CXXFLAGS)
