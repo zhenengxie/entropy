@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -I/usr/include/flann/ -lhdf5 -llz4
+CXXFLAGS = -Wall -I/usr/include/eigen3/ -lnabo -fopenmp -std=c++11
 
 main: entropy.cpp
-	$(CXX) entropy.cpp -o entropy $(CXXFLAGS)
+	$(CXX) entropy.cpp -o main $(CXXFLAGS)
